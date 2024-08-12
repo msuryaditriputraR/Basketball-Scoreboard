@@ -1,0 +1,71 @@
+/* ==================== CUSTOM FONT ===================== */
+@font-face {
+    font-family: cursedTimer;
+    src: url(../fonts/CursedTimerUlil-Aznm.ttf);
+}
+
+/* ==================== CSS VARIABLE ===================== */
+:root {
+    --bg-color: #1b244a;
+    --main-color: #f94f6d;
+    --second-color: #9aabd8;
+}
+
+/* ==================== CSS RESET ===================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursedTimer, monospace;
+    background-color: var(--bg-color);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+main {
+    border: 1px solid var(--second-color);
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 300px;
+}
+
+.score {
+    background-color: #000;
+    width: 100px;
+    height: 100px;
+    margin-block: 1rem;
+    font-size: 3.5rem;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    border-radius: 0.5rem;
+    color: var(--main-color);
+}
+
+.btns button {
+    background-color: transparent;
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+}
